@@ -1,5 +1,5 @@
 # ros_experiments
-This repository consists of 16* experiments that can be realized on ROS Melodic and Ubuntu 18.04. All 16 experiments are realized on HAMER robot.
+This repository consists of 15* experiments that can be realized on ROS Melodic and Ubuntu 18.04. All 15 experiments are realized on HAMER robot.
 HAMER Github: https://github.com/hamerrobots.
 
 # Experiments
@@ -22,3 +22,8 @@ Content of experiments are given as follows;
 14. Object Recognition with YOLOv3
 15. Lane follower robot application
 
+# Experiment 1
+
+The first experiment is constructed to demonstrate how to read sensor data from the robot. 
+
+$ asdasdadsasdsadasd
