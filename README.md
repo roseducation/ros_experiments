@@ -130,10 +130,10 @@ The main purpose of this experiment is to planning the shortest route for a robo
 multiple points using Genetic Algorithm.
 
 - Launch HAMER and Rviz. 
-> roslaunch hamer_simulation hamer_gazebo_maze.launch
-> roslaunch hamer_navigation hamer_navigation
+> $ roslaunch hamer_simulation hamer_gazebo_maze.launch
+> $ roslaunch hamer_navigation hamer_navigation
 - Run the file. 
->rosrun hamer_experiments hamer_genetic_algorithm.py
+> $ rosrun hamer_experiments hamer_genetic_algorithm.py
 
 # Experiment 12
 
@@ -142,21 +142,21 @@ RTABMAP
 # Experiment 13
 - find_object_2d; http://wiki.ros.org/find_object_2d
 - Launch HAMER. 
-> roslaunch hamer_simulation hamer_gazebo_maze.launch
+> $ roslaunch hamer_simulation hamer_gazebo_maze.launch
 - Run the following command. 
-> rosrun find_object_2d find_object_2d image:=Realsense_Camera/RGB/image_raw
+> $ rosrun find_object_2d find_object_2d image:=Realsense_Camera/RGB/image_raw
 
 # Experiment 14
 
 Object detection with Yolo V3.
 - darknet_ros: https://github.com/leggedrobotics/darknet_ros
 - Launch HAMER. 
-> roslaunch hamer_simulation hamer_gazebo_maze.launch
+> $ roslaunch hamer_simulation hamer_gazebo_maze.launch
 - Change the image topic to Realsense_Camera/RGB/image_raw in yolo_v3.launch file. 
-> roslaunch darknet_ros yolo_v3.launch
+> $ roslaunch darknet_ros yolo_v3.launch
 
 # Experiment 15
 Lane Following Robot
 
-> roslaunch hamer_experiments hamer_autorace.launch
-> rosrun hamer_experiments hamer_lane_follow.py
+> $ roslaunch hamer_experiments hamer_autorace.launch
+> $ rosrun hamer_experiments hamer_lane_follow.py
