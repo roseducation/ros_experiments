@@ -32,3 +32,40 @@ The first experiment is constructed to demonstrate how to read sensor data from 
 - Use Add button which is on the down left side of the RViz screen to add any sensor data.
 - Run the below command to control HAMER through keyboard.
 > $ rosrun hamer_teleop hamer_teleop.py
+
+# Experiment 2
+The main purpose of this experiment is to create a labyrinth environment in gazebo and add
+objects to the created environment.
+
+- Click on the edit tab on the upper left of the Gazebo window and select the Building Editor.
+- In the window that opens, the tab on the left shows the objects, colors and coatings we can
+use. Add walls according to the labyrinth perimeter you want from the Create walls section.
+- Add desired objects such as windows, doors and stairs from the Add Features section.
+- You can see the drawing area on the right. The added objects are seen and edited in this
+section. Clicking on an object can be moved to the right or left, new objects can be added and
+existing objects can be removed. The scale of this area can be seen at the bottom left of the
+drawing area. Adjust this scale to desired using the middle mouse button.
+- To edit the created objects, right click on the object and select the edit object section and edit
+the dimensions of the walls from here.
+- After the previously designed model is transferred to the Gazebo environment using the
+drawing area, exit from the drawing area from the file tab that appears at the top left of the
+screen, and the file is saved to turtlebot3_gazebo / models address.
+- After this process is completed, the created model is ready for use. Try adding it to any project
+using the insert tab on Gazebo.
+ 
+# Experiment 3
+The main purpose of this experiment is to introduce the students to linear and angular
+movements in ROS environment.
+- Launch HAMER with hamer_gazebo_emptyworld.launch file.
+> $ roslaunch hamer_gazebo_emptyworld.launch
+- Use the below command on another terminal.
+> $ rosrun hamer_experiments hamer_square.py
+
+# Experiment 4
+The main purpose of this experiment is to introduce the students to linear and angular
+movements in ROS environment.
+
+- Launch HAMER with hamer_gazebo_emptyworld.launch file.
+> $ roslaunch hamer_gazebo_emptyworld.launch
+- Use the below command on another terminal.
+> $ rosrun hamer_experiments hamer_patrol.py
