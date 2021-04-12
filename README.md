@@ -25,5 +25,10 @@ Content of experiments are given as follows;
 # Experiment 1
 
 The first experiment is constructed to demonstrate how to read sensor data from the robot. 
->asdasd
-1. Open 
+- Launch HAMER robot on any map.
+> $ roslaunch hamer_simulation hamer_gazebo_emptyworld.launch
+- Launch HAMER RViz file.
+> $ roslaunch hamer_simulation hamer_rviz.launch 
+- Use Add button which is on the down left side of the RViz screen to add any sensor data.
+- Run the below command to control HAMER through keyboard.
+> $ rosrun hamer_teleop hamer_teleop.py
