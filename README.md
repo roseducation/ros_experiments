@@ -2,6 +2,17 @@
 This repository consists of 15* experiments that can be realized on ROS Melodic and Ubuntu 18.04. All 15 experiments are realized on HAMER robot.
 HAMER Github: https://github.com/hamerrobots.
 
+# HAMER Installation 
+
+ROS Melodic version:
+
+$ git clone https://github.com/hamerrobots/hamer.git -b melodic-devel
+
+ROS Noetic version:
+
+$ git clone https://github.com/hamerrobots/hamer.git -b noetic-devel
+
+
 # Experiments
 
 Content of experiments are given as follows; 
@@ -95,3 +106,56 @@ The main purpose of this experiment is creating a Python script to control the H
 > $ roslaunch hamer_gazebo_emptyworld.launch
 - Use the below command on another terminal.
 > $ roslaunch hamer_experiments voice_control.launch
+
+# Experiment 8
+The main purpose of this experiment is ensuring autonomous movement of the robot by extracting the environment map with the gmapping package using the slam algorithm.
+
+# Experiment 9
+This experiment contains autonomous mapping with frontier_exploration package. The frontier_exploration is a package that it can create an outline of a map autonomously.
+- frontier_exploration: http://wiki.ros.org/frontier_exploration
+- Launch HAMER. 
+> $ roslaunch hamer_simulation hamer_gazebo_maze.launch
+- Run the SLAM file.
+> roslaunch hamer_slam hamer_slam.launch slam_metgods:=frontier
+-Run RViz
+> roslaunch hamer_simulation hamer_rviz.launch
+> roslaunch exploration_server exploration.launch
+
+# Experiment 10
+Map Merge
+
+# Experiment 11
+
+The main purpose of this experiment is to planning the shortest route for a robot to reach
+multiple points using Genetic Algorithm.
+
+- Launch HAMER and Rviz. 
+> roslaunch hamer_simulation hamer_gazebo_maze.launch
+> roslaunch hamer_navigation hamer_navigation
+- Run the file. 
+>rosrun hamer_experiments hamer_genetic_algorithm.py
+
+# Experiment 12
+
+RTABMAP
+
+# Experiment 13
+- find_object_2d; http://wiki.ros.org/find_object_2d
+- Launch HAMER. 
+> roslaunch hamer_simulation hamer_gazebo_maze.launch
+- Run the following command. 
+> rosrun find_object_2d find_object_2d image:=Realsense_Camera/RGB/image_raw
+
+# Experiment 14
+
+Object detection with Yolo V3.
+- darknet_ros: https://github.com/leggedrobotics/darknet_ros
+- Launch HAMER. 
+> roslaunch hamer_simulation hamer_gazebo_maze.launch
+- Change the image topic to Realsense_Camera/RGB/image_raw in yolo_v3.launch file. 
+> roslaunch darknet_ros yolo_v3.launch
+
+# Experiment 15
+Lane Following Robot
+> roslaunch hamer_experiments hamer_autorace.launch
+> rosrun hamer_experiments hamer_lane_follow.py
