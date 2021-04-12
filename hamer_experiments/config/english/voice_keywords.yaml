@@ -1,0 +1,12 @@
+commands: ['go ahead',
+           'back',
+           'left',
+           'right',
+           'stop',
+           'look left',
+           'look right',
+           'happy',
+           'angry',
+           'sad',
+           'neutral',
+           'confused']
