@@ -69,3 +69,29 @@ movements in ROS environment.
 > $ roslaunch hamer_gazebo_emptyworld.launch
 - Use the below command on another terminal.
 > $ rosrun hamer_experiments hamer_patrol.py
+
+# Experiment 5
+The purpose of this experiments is to realize an object avoidance program for Turtlebot3 using
+Bug 0 Algorithm.
+
+- Launch HAMER with hamer_gazebo_maze.launch file.
+> $ roslaunch hamer_gazebo_emptyworld.launch
+- Use the below command on another terminal.
+> $ rosrun hamer_experiments hamer_bug0.py
+
+# Experiment 6
+In this experiment, student will write a node for the HAMER. The node must be designed as, the robot should follow the walls and the distance between wall and robot’s corners must be printed on terminal unless there is no interrupt on the program.
+
+
+- Launch HAMER with hamer_gazebo_emptyworld.launch file.
+> $ roslaunch hamer_gazebo_emptyworld.launch
+- Use the below command on another terminal.
+> $ rosrun hamer_experiments hamer_follow_wall.py
+
+# Experiment 7
+The main purpose of this experiment is creating a Python script to control the HAMER with voice control.
+
+- Launch HAMER with hamer_gazebo_emptyworld.launch file.
+> $ roslaunch hamer_gazebo_emptyworld.launch
+- Use the below command on another terminal.
+> $ roslaunch hamer_experiments voice_control.launch
